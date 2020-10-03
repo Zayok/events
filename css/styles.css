@@ -12,6 +12,7 @@ a{
 body{
     font: 400 22px 'Poppins', sans-serif;
     color: #444444;
+    line-height: 1.6;
 
 }
 .container{
@@ -20,7 +21,7 @@ body{
     margin: 0 auto;
 }
 .box{
-    outline: 1px solid orange;
+   
     padding: 90px 0;
 }
 .box--padding-lg{
@@ -33,7 +34,7 @@ body{
     background: #eeeeee;
 }
 .box-bg-gradient{
-    background-image: linear-gradient(to bottom, #333399 4 0%, #fe00cc 100%);
+    background-image: linear-gradient(to bottom, #333399 40%, #fe00cc 100%);
 }
 
 h1, h2{
@@ -105,6 +106,10 @@ header .container{
     align-items: center;
     text-align: center;
     color: #fff;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;/*заполнить все поле*/
+    background-image: url(../img/hero.jpg);
 }
 .hero_text{
     font-size: 30px;
@@ -144,4 +149,9 @@ padding: 25px 80px;
     color: #444444;
 }
 
-
+.text-purpule{
+    color: #e71cb4;
+}
+.text_lg{
+    font-size: 32px;
+}
