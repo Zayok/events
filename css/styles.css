@@ -55,7 +55,10 @@ h5{
 header{
 
     color: #fff;
-    background: #999999;
+    position: absolute;
+    top: 0;/* привязываем к верху*/
+    left: 0;
+    right: 0;
 }
 header a{
     color: inherit; /*от родителя цвет */
@@ -94,3 +97,51 @@ header .container{
     align-items: center;/*растягиваем все в одну строку*/
     justify-content: space-between;
 }
+.hero{
+    min-width: 100vh;
+    background: #000;
+    display: flex;/* выравниваем*/
+    justify-content: center;/*по центру*/
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.hero_text{
+    font-size: 30px;
+}
+.hero_title{
+    font-size: 30px;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #e71cd4;
+    border: 2px solid #e71cb4;
+    border-radius: 5px;
+    padding: 15px 50px;
+    display: inline-block;
+
+}
+.btn--lg{
+font-size: 22px;
+padding: 25px 80px;
+}
+.btn:hover,/*при наведении меняет цвет*/
+.btn:focus,
+.btn:active{
+    color: #e71cb4;
+    background-color: white;
+}
+.btn--transporent{
+    background-color:transparent;
+    border-color: #fff;
+}
+
+.btn--transporent:hover,
+.btn--transporent:focus,
+.btn--transporent:active{
+    color: #444444;
+}
+
+
