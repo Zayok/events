@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,500&display=swap');
 * {
     box-sizing: border-box; /*выбираем способ расчета с учетом рамки*/
 }
@@ -25,7 +25,7 @@ body{
     padding: 90px 0;
 }
 .box--padding-lg{
-    padding: 140px 0;
+    padding: 90px 0;
 }
 .box-bg-pink{
     background: #ffe9eb;
@@ -68,9 +68,10 @@ header a{
     font-weight: 700;
     font-size: 33px;
 }
-.logo :hover,
+.logo:hover,
 .logo:focus,
-.logo :active{
+.logo:active
+{
     color: #e71cb4;
 }
 nav ul{
@@ -78,7 +79,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-margin-left: 25px;
+    margin-left: 25px;
 }
 
 nav ul li a{
@@ -154,4 +155,44 @@ padding: 25px 80px;
 }
 .text_lg{
     font-size: 32px;
+}
+.course
+{
+    list-style-type: none;
+    padding: 25px 0;
+    font-size: 24px;
+    font-weight: 500;
+    columns: 2;
+    column-gap: 30px;
+
+}
+.course li
+{
+    display: flex;
+    padding: 25px 0;
+    
+}
+.course__index
+{
+    font-weight: 700;
+    font-size: 44px;
+    display: inline-block;
+    margin: 0 25px;
+    line-height: 1.2;
+}
+.text-yellow
+{
+    color: #ffde16;
+}
+.text-salmon
+{
+    color: #ffbd9e;
+}
+.text-blue
+{
+    color: #20c9e0;
+}
+.text-green
+{
+    color: #2eac66;
 }
