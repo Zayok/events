@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Poppins:ital,wght@0,400;0,700;1,400;1,500&display=swap');
 * {
+    
     box-sizing: border-box; /*выбираем способ расчета с учетом рамки*/
-}
-a, button{
-    transition: all .3s ease-in-out;
 }
 a{
     text-decoration: none;
-   
+    transition: all .3s ease-in-out;
 }
 body{
     font: 400 22px 'Poppins', sans-serif;
@@ -20,9 +18,13 @@ body{
     padding: 0 15px;
     margin: 0 auto;
 }
+.container--sm
+{
+    max-width: 750px;
+}
 .box{
    
-    padding: 90px 0;
+    padding: 40px 0 80px;
 }
 .box--padding-lg{
     padding: 90px 0;
@@ -262,4 +264,88 @@ padding: 25px 80px;
 .person--padding-sm
 {
     padding: 20px;
+}
+.countdown
+{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.countdown__item
+{
+    background-color: #4b0241;
+    border: 2px solid #4b0241;
+    min-width: 160px;
+    min-height: 160px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 30px 20px 30px;
+    margin: 0 35px;
+    text-align: center;
+}
+.countdown__item:hover,
+.countdown__item:focus
+{
+    background-color: transparent;
+    border-color: #fff;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.countdown__num
+{
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 1.2;
+}
+.countdown__text
+{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.sponsors
+{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.sponsor
+{
+    padding: 20px;
+    width: 25%;
+}
+.sponsor img
+{
+    width: 100%;
+}
+.socials
+{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 30px 0 0;
+}
+.social
+{
+    display: inline-block;
+    
+}
+.social a
+{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: #dedede;
+    color: #fff;
+    border-radius: 50%;
+}
+.social a:hover,
+.social a:focus
+{
+    background-color: #e71cb4;
+}
+.social i
+{
+    margin: auto;
 }
